@@ -1,0 +1,51 @@
+<div class="container-fluid">
+    <img class="imgdiv" src="assets/images/about.webp" alt="">
+</div>
+
+<div class="container-fluid div1">
+    <div class="container div2">
+<img src="assets/images/about2.jpg" alt="">
+    </div>
+    <div class="container div3">
+
+        <h2 class="text-info"><b>About Us</b></h2>
+        <p>Chartered Accountants is a leading chartered accountancy firm rendering comprehensive professional services which
+        include Audit, Management Consultancy, Tax Consultancy, Accounting Services, Manpower Management, Secretarial Services
+        etc.
+        <br>
+        
+        Chartered Accountants is a professionally managed firm. The team consists of distinguished Chartered Accountants,
+        Corporate Financial Advisors and Tax Consultants. The firm represents a combination of specialized skills, which are
+        geared to offers sound financial advice and personalized proactive services.</p>
+    </div>
+
+</div>
+
+
+
+<div class="container-fluid bg-info p-4 text-center pb-5">
+    <h2 class="text-center mb-5 text-secondary"><b>GET IN TOUCH</b></h2>
+    <form action="form" name=" formGroup" [formGroup]="myForm" (ngSubmit)="onSubmit">
+        <div class="row">
+            <div class="col">
+                <input class="w-100 m-4 p-3" formControlName="fname" type="text" name="fname"  placeholder="First Name">
+            </div>
+            <div class="col">
+                <input class="w-100 m-4 p-3"  formControlName="lname" type="text" name="lname"  placeholder="Last Name">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <input class="w-100 m-4 p-3"  type="email" name="email" placeholder="Enter Email">
+            </div>
+            <div class="col">
+                <input class="w-100 m-4 p-3" type="number" name="phnum" placeholder="Enter Phone Number">
+            </div>
+        </div>
+
+        <textarea class="w-100 m-4 p-3" name="tarea"  rows="5" placeholder="Enter your message"></textarea>
+    <button class="btn btn-lg  btn-primary btn-center">Submit</button>
+    </form>
+
+</div>
